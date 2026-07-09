@@ -3,11 +3,13 @@ class Library:
         self.books=[]
     def add_book(self,book):
         self.books.append(book)
+        book.is_available=True
     def remove_book(self,isbn):
         idx=0
         for b in self.books:
             if b.isbn==isbn:
                 self.books.pop(idx)
+                self.books[idx].is_available=False
                 return True
             idx+=1
         return False

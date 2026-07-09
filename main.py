@@ -7,7 +7,6 @@ book1=Book(
     input("Enter Book author "),
     int(input("Enter Book year ")),
     input("Enter Book isbn "),
-    True
 )
 
 
