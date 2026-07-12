@@ -1,4 +1,5 @@
 import json
+from Models.book import Book
 class Library:
     def __init__(self):
         self.books=[]
@@ -64,3 +65,26 @@ class Library:
             json_list.append(b.to_dict())
         with open(filename, "w") as f:
             json.dump(json_list,f,indent=4)
+
+    def load_books(self, filename):
+
+      try:
+         with open(filename, "r") as f:
+            json_books = json.load(f)
+
+         new_books = []
+
+         for book in json_books:
+            new_books.append(Book.from_dict(book))
+
+         self.books = new_books
+
+      except FileNotFoundError:
+        print("File does not exist")
+
+      except json.JSONDecodeError:
+        print("The JSON file is corrupted")
+
+      except KeyError:
+         print("Missing Data!")
+

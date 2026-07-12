@@ -1,0 +1,23 @@
+[
+    {
+        "title": "ibraheem",
+        "year": 1234,
+        "author": "jj",
+        "isbn": 241414,
+        "is_available": true
+    },
+    {
+        "title": "mohammad",
+        "year": 1234,
+        "author": "mm",
+        "isbn": 198274,
+        "is_available": true
+    },
+    {
+        "title": "jarrah",
+        "year": 4321,
+        "author": "ii",
+        "isbn": 239242,
+        "is_available": true
+    }
+]
