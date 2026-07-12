@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Clean Code",
+        "year": 2008,
+        "author": "Robert Martin",
+        "isbn": "111",
+        "is_available": false
+    },
+    {
+        "title": "Python",
+        "year": 2020,
+        "author": "Guido",
+        "isbn": "222",
+        "is_available": true
+    }
+]

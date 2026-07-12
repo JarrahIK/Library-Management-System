@@ -6,11 +6,9 @@ class Library:
 
     #Find the Book Using the Unique ISBN number
     def find_book_by_isbn(self,isbn):
-        idx=0
-        for b in self.books:
+        for x,b in enumerate(self.books):
             if b.isbn==isbn:
-             return idx
-            idx+=1
+             return x
         return None
     
     #Add books to the Library 
