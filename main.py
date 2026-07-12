@@ -7,8 +7,22 @@ book1=Book(
     input("Enter Book author "),
     int(input("Enter Book year ")),
     input("Enter Book isbn "),
+    
 )
-
+book2=Book(
+    input("Enter Book title "),
+    input("Enter Book author "),
+    int(input("Enter Book year ")),
+    input("Enter Book isbn "),
+    
+)
+book3=Book(
+    input("Enter Book title "),
+    input("Enter Book author "),
+    int(input("Enter Book year ")),
+    input("Enter Book isbn "),
+    
+)
 
 
 city_library.add_book(book1)
